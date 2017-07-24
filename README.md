@@ -85,5 +85,7 @@ tail -f /var/log/nsx-lb-healthcheck.log
 Currently I assume your RADIUS server does not require challenge/response. It is relevantly easy to be implemented. Please open a github issue if you need me to add it for you.
 
 ## Development
-TBD
+Be aware, once you configure the service monitor the LoadBalancer will not send traffic to a RADIUS server where radius-lb-health.py is not running. You need to ensure by traditinoal Linux way that the script runs as a process.
+
+
 
