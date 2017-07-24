@@ -12,8 +12,8 @@
 
 ## Description
 
-Script that checks the health status of an RADIUS server in order to provide feedback to a LB healthcheck
-Be aware neither me or VMware provide support for this. It is to help customers do it by themself.
+Script that checks the health status of an RADIUS server in order to provide feedback to a LB healthcheck. <br/>
+<b>Be aware neither me or VMware provide support for this. It is to help customers do it by themself.</b>
 
 ## Setup
 
@@ -21,7 +21,7 @@ Be aware neither me or VMware provide support for this. It is to help customers 
 
 First configure user/password in your RADIUS server. If you want to run the script un-modified you can configure username nsx-lb-test with password VMware1!.
 It also runs with the Freeradius default secret for local host which is testing123.
-You can test if the your user authenticates correctly with:
+You can test if your user authenticates correctly with:
 ```
 radtest nsx-lb-test VMware1! 127.0.0.1 0 testing123
 ```
