@@ -7,7 +7,7 @@
     * [Install](#Install)
     * [Configure](#Configure)
 1. [Usage](#usage)
-1. [Limitations](#Limitations)
+1. [Limitations](#limitations)
 1. [Development](#development)
 
 ## Description
