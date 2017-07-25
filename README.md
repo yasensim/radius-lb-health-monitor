@@ -90,7 +90,7 @@ tail -f /var/log/nsx-lb-healthcheck.log
 
 Currently I assume your RADIUS server does not require challenge/response. It is relevantly easy to be implemented. Please open a github issue if you need me to add it for you.
 Other limitation is that the LB checks network communication to the target server on the monitor port (8081 by default) and script checks if the RADIUS UDP port works locally
-as well as RADIUS server works properly (the user can authenticate). This means if there is firewall denying RADIUS UDP port in the middle it will not work.
+as well as RADIUS server works properly (the user can authenticate). This means if there is a firewall denying RADIUS UDP port in the middle it will not work.
 
 ## Development
 Be aware, once you configure the service monitor the LoadBalancer will not send traffic to a RADIUS server where radius-lb-health.py is not running. You need to ensure by traditinoal Linux way that the script runs as a process.
